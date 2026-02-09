@@ -98,8 +98,8 @@ def configSimulation(name, anecroic=True):
     elif name == 'refraction':
         S = config_refraction(S)
 
-    # else:
-    #     print(f"[configSimulation] Unknown configuration name: {name}")
+    else:
+        print(f"[configSimulation] Unknown configuration name: {name}")
 
     return S
 
