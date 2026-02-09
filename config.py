@@ -62,19 +62,19 @@ def configSimulation(name, anecroic=True):
     elif name == 'closed room':
         S = config_closed_room(S)
     
-    if name == 'room with lens':
+    elif name == 'room with lens':
         S = config_room_with_lens(S)
     
     elif name == 'room with receiver':
         S = config_room_with_receiver(S)
     
-    if name == 'flat room with receiver':
+    elif name == 'flat room with receiver':
         S = config_flat_room_with_receiver(S)
 
     elif name == 'single lens':
         S = config_single_lens(S)
 
-    if name == 'single lens plane':
+    elif name == 'single lens plane':
         S = config_single_lens_plane(S)
 
     elif name == 'laser pulse':
@@ -98,8 +98,8 @@ def configSimulation(name, anecroic=True):
     elif name == 'refraction':
         S = config_refraction(S)
 
-    else:    
-        print(f"[configSimulation] Unknown configuration name: {name}")
+    # else:
+    #     print(f"[configSimulation] Unknown configuration name: {name}")
 
     return S
 
