@@ -472,7 +472,7 @@ def config_flat_room_with_receiver(S):
     sources_parameter = {}
     sources_parameter['cx'] = 0.5       
     sources_parameter['cy'] = 0.5       
-    sources_parameter['amplitude'] = 1000
+    sources_parameter['amplitude'] = 2000
     sources_parameter['width'] = 0.03
     sources_parameter['frequency'] = 40
     sources_parameter['time'] = 0
